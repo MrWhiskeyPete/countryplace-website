@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Country Place Community | Hico, TX Rentals</title>
+  <meta name="description" content="Contact Country Place Community in Hico, TX. Call (682) 232-6479 or email info@countryplacecommunity.com to check availability on cabins, RV sites, and mobile home rentals.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">CP</div>
+        <div class="nav-logo-text">Country Place</div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cabins.html">Cabins For Rent</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="nav-cta">Check Availability</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero hero--short">
+    <div class="hero-content">
+      <h1>Get in Touch</h1>
+      <p>We'd love to hear from you — whether you're looking for a place to rent or just have a question.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section bg-wash">
+    <div class="container">
+      <div class="grid-2-top">
+
+        <!-- Left: Info -->
+        <div>
+          <h2>Contact Country Place</h2>
+          <p class="text-lg" style="margin-bottom:32px">Whether you're looking for a place to rent, have a question about the community, or just want to say hello — we're here to help.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>17455 U.S. Highway 281<br>Hico, TX 76457</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:6822326479">(682) 232-6479</a></p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:info@countryplacecommunity.com">info@countryplacecommunity.com</a></p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🕘</div>
+            <div>
+              <h4>Office Hours</h4>
+              <p>Monday – Friday: 9:00 AM – 6:00 PM<br>Saturday &amp; Sunday: By appointment</p>
+            </div>
+          </div>
+
+          <p style="font-size:14px;color:var(--text-light);font-style:italic;margin-top:24px">If you reach our voicemail, leave a message and we'll get back to you as soon as we can.</p>
+        </div>
+
+        <!-- Right: Form -->
+        <div>
+          <div class="contact-form">
+            <!--
+              FORM SETUP: Replace YOUR_FORMSPREE_ID below with your actual Formspree endpoint.
+              1. Go to https://formspree.io and sign up (free tier = 50 submissions/month)
+              2. Create a new form pointed to info@countryplacecommunity.com
+              3. Copy the form ID and replace YOUR_FORMSPREE_ID below
+            -->
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+              <h3>Send Us a Message</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first">First Name</label>
+                  <input type="text" id="first" name="first_name" placeholder="Your first name" required>
+                </div>
+                <div class="form-group">
+                  <label for="last">Last Name</label>
+                  <input type="text" id="last" name="last_name" placeholder="Your last name" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+              </div>
+              <div class="form-group">
+                <label for="interest">I'm Interested In</label>
+                <select id="interest" name="interest">
+                  <option value="">Select an option...</option>
+                  <option value="cabin">Renting a Cabin</option>
+                  <option value="rv">RV Pad</option>
+                  <option value="mobile-home">Mobile Home</option>
+                  <option value="general">General Question</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us a little about what you're looking for..."></textarea>
+              </div>
+              <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+            <div id="form-success" class="form-success">
+              <h3>Thank You!</h3>
+              <p>We got your message and will get back to you as soon as we can.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Country Place</div>
+        <span style="font-size:12px;color:rgba(255,255,255,.35)">Country Place MHP, LLC &bull; &copy; 2026</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cabins.html">Cabins For Rent</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        17455 U.S. Hwy 281, Hico, TX 76457<br>
+        <a href="tel:6822326479">(682) 232-6479</a> &bull;
+        <a href="mailto:info@countryplacecommunity.com">info@countryplacecommunity.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
