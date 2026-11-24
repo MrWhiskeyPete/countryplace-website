@@ -17,6 +17,15 @@ if (toggle) {
   });
 }
 
+// Preselect the unit when arriving from a listing link (e.g. contact.html?unit=cabin-3)
+const interest = document.getElementById('interest');
+if (interest) {
+  const unit = new URLSearchParams(window.location.search).get('unit');
+  if (unit && interest.querySelector(`option[value="${CSS.escape(unit)}"]`)) {
+    interest.value = unit;
+  }
+}
+
 // Contact form handler (Formspree or similar)
 const form = document.getElementById('contact-form');
 if (form) {

@@ -112,11 +112,25 @@
                 <label for="interest">I'm Interested In</label>
                 <select id="interest" name="interest">
                   <option value="">Select an option...</option>
+                  <option value="cabin-3">Cabin 3 (available now, $900/mo)</option>
                   <option value="cabin">Renting a Cabin</option>
                   <option value="rv">RV Pad</option>
-
                   <option value="general">General Question</option>
                 </select>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="move_in">Desired Move-In Date</label>
+                  <input type="date" id="move_in" name="move_in_date">
+                </div>
+                <div class="form-group">
+                  <label for="occupants">Number of Occupants</label>
+                  <input type="number" id="occupants" name="occupants" min="1" max="10" placeholder="1">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="pets">Pets?</label>
+                <input type="text" id="pets" name="pets" placeholder="None, or type and size (e.g., 1 small dog)">
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
